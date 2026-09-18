@@ -42,3 +42,31 @@ Solutions to the TDSE $i\hbar \frac{\partial \phi(t)}{\partial t} = E\phi(t)$ ar
 $$\Psi(x_i,t_j) = \sum_n c_n\psi_n(x_i)e^{\frac{-iE_nt_j}{\hbar}}$$  
 
 Only eigenstates $n = 0$ to $n = 80$ are used to construct $\Psi(x,t)$ as errors introduced into $\psi_n$ for $n > 80$ due to the domain width causes erroneous dispersion of $\Psi(x,t)$. 
+Finally, the expectation and uncertainty in the position $x$ of the wavepacket are calculated using
+
+$$ \langle x \rangle (t_j) = \langle \Psi(x,t_j)|\hat{X}|\Psi(x,t_j)\rangle \approx \sum_i |\Psi(x,t_j)|^2 x_i dx $$
+and
+$$ \Delta x(t_j) = \sqrt{\langle x^2 \rangle (t_j) - \langle x \rangle ^2 (t_j)} $$ 
+
+where $\hat{X} = x$. 
+
+## Results
+
+![Numerical Eigenstates of QHO](plots/eigenstates.png)
+The first five eigenstates $\psi_n(x)$ and the corresponding probability densities $|\psi_n(x)|^2$ of the QHO with the $\hat{H}$ approximation for $-20 < x < 20$.
+
+<br><br>
+
+![Wavepacket animation](plots/wavepacket.gif)
+Time-dependent spatial oscillation of the probability density of a Gaussian wavepacket in a harmonic potential with $x_0 = 0, k_0 = 10$ and $\sigma = 1$.
+
+<br><br>
+
+![Position expectation & uncertainty](plots/exp_unc_x.png)
+The sinusoidal oscillation of $\langle x \rangle$ with $t$ with period $T = 6.25$ and the oscillation of $\Delta x(t)$ with a period half that of $\langle x \rangle (t)$.
+
+## Repository Structure
+This repository contains:
+- This README
+- 'plots' file: Contains the plots shown in this README
+- 'Quantum_Harmonic_Oscillator.ipynb' Jupyter notebook: This jupyter notebook contains all of the code for the calculations, error analysis and plots (including additional plots not included in the README) required for this project. This is supplemented with extensive markdown, explaining and commenting on the underlying theory, justifications for steps, error analysis and interpretations of the results displayed.  [View the notebook](Quantum_Harmonic_Oscillator.ipynb) 
