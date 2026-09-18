@@ -65,3 +65,8 @@ Time-dependent spatial oscillation of the probability density of a Gaussian wave
 ![Position expectation & uncertainty](plots/exp_unc_x.png)
 The sinusoidal oscillation of $\langle x \rangle$ with $t$ with period $T = 6.25$ and the oscillation of $\Delta x(t)$ with a period half that of $\langle x \rangle (t)$.
 
+## Repository Structure
+This repository contains:
+- This README
+- 'plots' file: Contains the plots shown in this README
+- 'Quantum_Harmonic_Oscillator.ipynb' Jupyter notebook: This jupyter notebook contains all of the code for the calculations, error analysis and plots (including additional plots not included in the README) required for this project. This is supplemented with extensive markdown, explaining and commenting on the underlying theory, justifications for steps, error analysis and interpretations of the results displayed.  [View the notebook](Quantum_Harmonic_Oscillator.ipynb) 
