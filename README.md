@@ -42,3 +42,10 @@ Solutions to the TDSE $i\hbar \frac{\partial \phi(t)}{\partial t} = E\phi(t)$ ar
 $$\Psi(x_i,t_j) = \sum_n c_n\psi_n(x_i)e^{\frac{-iE_nt_j}{\hbar}}$$  
 
 Only eigenstates $n = 0$ to $n = 80$ are used to construct $\Psi(x,t)$ as errors introduced into $\psi_n$ for $n > 80$ due to the domain width causes erroneous dispersion of $\Psi(x,t)$. 
+Finally, the expectation and uncertainty in the position $x$ of the wavepacket are calculated using
+
+$$ \langle x \rangle (t_j) = \langle \Psi(x,t_j)|\hat{X}|\Psi(x,t_j)\rangle \approx \sum_i |\Psi(x,t_j)|^2 x_i dx $$
+and
+$$ \Delta x(t_j) = \sqrt{\langle x^2 \rangle (t_j) - \langle x \rangle ^2 (t_j)} $$ 
+
+where $\hat{X} = x$. 
