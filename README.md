@@ -49,3 +49,19 @@ and
 $$ \Delta x(t_j) = \sqrt{\langle x^2 \rangle (t_j) - \langle x \rangle ^2 (t_j)} $$ 
 
 where $\hat{X} = x$. 
+
+## Results
+
+![Numerical Eigenstates of QHO](plots/eigenstates.png)
+The first five eigenstates $\psi_n(x)$ and the corresponding probability densities $|\psi_n(x)|^2$ of the QHO with the $\hat{H}$ approximation for $-20 < x < 20$.
+
+<br><br>
+
+![Wavepacket animation](plots/wavepacket.gif)
+Time-dependent spatial oscillation of the probability density of a Gaussian wavepacket in a harmonic potential with $x_0 = 0, k_0 = 10$ and $\sigma = 1$.
+
+<br><br>
+
+![Position expectation & uncertainty](plots/exp_unc_x.png)
+The sinusoidal oscillation of $\langle x \rangle$ with $t$ with period $T = 6.25$ and the oscillation of $\Delta x(t)$ with a period half that of $\langle x \rangle (t)$.
+
